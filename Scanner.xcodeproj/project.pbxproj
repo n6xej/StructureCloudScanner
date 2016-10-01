@@ -39,7 +39,6 @@
 		BFEC10E01D6CCA4700BC2A3F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEC10DF1D6CCA4700BC2A3F /* libc++.tbd */; };
 		BFFCD7581D74334700BE291B /* ScannerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCD7571D74334700BE291B /* ScannerExtensions.swift */; };
 		CE6743B41D9E75AA00EEE8C9 /* UploadNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6743B31D9E75AA00EEE8C9 /* UploadNavigationBar.swift */; };
-		CEBAD7E91D96089600CA6FC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD7E71D96089600CA6FC2 /* Main.storyboard */; };
 		CEC87D2B1D9ED329009E7E3A /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC87D2A1D9ED329009E7E3A /* SwiftyDropbox.framework */; };
 		CEC87D2C1D9ED329009E7E3A /* SwiftyDropbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEC87D2A1D9ED329009E7E3A /* SwiftyDropbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEC87D2E1D9ED329009E7E3A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC87D2D1D9ED329009E7E3A /* Alamofire.framework */; };
@@ -99,7 +98,6 @@
 		BFFCD7571D74334700BE291B /* ScannerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerExtensions.swift; sourceTree = "<group>"; };
 		CE0DF8DB1D9E337F008EF311 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = Scanner/SwiftyDropbox.framework; sourceTree = "<group>"; };
 		CE6743B31D9E75AA00EEE8C9 /* UploadNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadNavigationBar.swift; sourceTree = "<group>"; };
-		CEBAD7E81D96089600CA6FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC87D2A1D9ED329009E7E3A /* SwiftyDropbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyDropbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC87D2D1D9ED329009E7E3A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,7 +177,6 @@
 				BF9465851D6C562E00E1FD98 /* Scanner.entitlements */,
 				BF94652E1D6C539300E1FD98 /* Assets.xcassets */,
 				BF9465301D6C539300E1FD98 /* LaunchScreen.storyboard */,
-				CEBAD7E71D96089600CA6FC2 /* Main.storyboard */,
 				BF9465A61D6C660700E1FD98 /* Main_iPhone.storyboard */,
 				BF642AA41D7374F50055CBE3 /* Main_iPad.storyboard */,
 				BF9465331D6C539300E1FD98 /* Info.plist */,
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9465A41D6C660700E1FD98 /* Main_iPhone.storyboard in Resources */,
-				CEBAD7E91D96089600CA6FC2 /* Main.storyboard in Resources */,
 				BF642AA61D7374F50055CBE3 /* Main_iPad.storyboard in Resources */,
 				BF9465321D6C539300E1FD98 /* LaunchScreen.storyboard in Resources */,
 				BF94652F1D6C539300E1FD98 /* Assets.xcassets in Resources */,
@@ -334,14 +330,6 @@
 				BF9465A51D6C660700E1FD98 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		CEBAD7E71D96089600CA6FC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEBAD7E81D96089600CA6FC2 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
