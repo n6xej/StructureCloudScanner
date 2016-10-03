@@ -13,7 +13,7 @@ This version builds on Xcode 8 and uses Swift v3. You will need a [Structure Sen
 
 The controls of hidden by default and require a long press to make them visible. The view port has also been set to the size of the screen. 
 
-When uploading to dropbox, the preview picture is a snapshot of what is currently displayed, unlike the email version which is rendered from the initial viewpoint
+When uploading to dropbox, the preview picture is a snapshot of what is currently displayed, unlike the sampleSDK version which is rendered from the initial viewpoint
 
 <p align="center">
   <img src="Images/27.png" alt="shaded view" width="420"/>
