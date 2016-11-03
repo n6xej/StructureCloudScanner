@@ -209,7 +209,7 @@ extension ViewController {
 					
                     var colorCameraPoseInStreamCoordinateSpace = GLKMatrix4.init()
 					
-					withUnsafePointer(to: &colorCameraPoseInStreamCoordinateSpace, {
+					withUnsafeMutablePointer(to: &colorCameraPoseInStreamCoordinateSpace, {
 						$0.withMemoryRebound(to: Float.self, capacity: 16, {
 							depthFrame.colorCameraPose(inDepthCoordinateFrame: $0)
 						})
@@ -257,7 +257,7 @@ extension ViewController {
 				
 				var colorCameraPoseInDepthCoordinateSpace = GLKMatrix4.init()
 				
-				withUnsafePointer(to: &colorCameraPoseInDepthCoordinateSpace, {
+				withUnsafeMutablePointer(to: &colorCameraPoseInDepthCoordinateSpace, {
 					$0.withMemoryRebound(to: Float.self, capacity: 16, {
 						depthFrame.colorCameraPose(inDepthCoordinateFrame: $0)
 						
