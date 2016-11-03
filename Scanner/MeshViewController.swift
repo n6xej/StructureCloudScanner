@@ -361,7 +361,7 @@ open class MeshViewController: UIViewController, UIGestureRecognizerDelegate, MF
             let topIdx = Int(width * h)
             let bottomIdx = Int(width * (height - h - 1))
 			
-			withUnsafePointer(to: &screenShotRgbaBuffer[topIdx]) { (one) -> () in
+			withUnsafeMutablePointer(to: &screenShotRgbaBuffer[topIdx]) { (one) -> () in
 				withUnsafePointer(to: &screenBottomRowBuffer[0], { (two) -> () in
 					
 					one.withMemoryRebound(to: UInt32.self, capacity: Int(width), { (onePtr) -> () in
@@ -373,7 +373,7 @@ open class MeshViewController: UIViewController, UIGestureRecognizerDelegate, MF
 				})
 			}
 			
-			withUnsafePointer(to: &screenShotRgbaBuffer[bottomIdx]) { (one) -> () in
+			withUnsafeMutablePointer(to: &screenShotRgbaBuffer[bottomIdx]) { (one) -> () in
 				withUnsafePointer(to: &screenTopRowBuffer[0], { (two) -> () in
 					
 					one.withMemoryRebound(to: UInt32.self, capacity: Int(width), { (onePtr) -> () in
@@ -426,7 +426,7 @@ open class MeshViewController: UIViewController, UIGestureRecognizerDelegate, MF
 			let topIdx = Int(width * h)
 			let bottomIdx = Int(width * (height - h - 1))
 			
-			withUnsafePointer(to: &screenShotRgbaBuffer[topIdx]) { (one) -> () in
+			withUnsafeMutablePointer(to: &screenShotRgbaBuffer[topIdx]) { (one) -> () in
 				withUnsafePointer(to: &screenBottomRowBuffer[0], { (two) -> () in
 					
 					one.withMemoryRebound(to: UInt32.self, capacity: Int(width), { (onePtr) -> () in
@@ -438,7 +438,7 @@ open class MeshViewController: UIViewController, UIGestureRecognizerDelegate, MF
 				})
 			}
 			
-			withUnsafePointer(to: &screenShotRgbaBuffer[bottomIdx]) { (one) -> () in
+			withUnsafeMutablePointer(to: &screenShotRgbaBuffer[bottomIdx]) { (one) -> () in
 				withUnsafePointer(to: &screenTopRowBuffer[0], { (two) -> () in
 					
 					one.withMemoryRebound(to: UInt32.self, capacity: Int(width), { (onePtr) -> () in
